@@ -299,7 +299,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="11" y="427" width="389" height="173"/>
+                                    <rect key="frame" x="0.0" y="427" width="400" height="173"/>
                                 </variation>
                             </imageView>
                         </subviews>

@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="44" width="304" height="21"/>
+                                    <rect key="frame" x="48" y="44" width="286" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-OA-4qy">
@@ -116,14 +116,14 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEA-DJ-cFy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-Yn-5np">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tep-OE-Vts">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="."/>
+                                <state key="normal" title="9"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="77" y="322" width="46" height="30"/>
+                                    <rect key="frame" x="277" y="173" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNG-3B-mZ3"/>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sM-pD-xH5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-E2-qSa">
@@ -196,14 +196,14 @@
                                     <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5g-YC-EV4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tep-OE-Vts">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-Yn-5np">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="9"/>
+                                <state key="normal" title="."/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="277" y="173" width="46" height="30"/>
+                                    <rect key="frame" x="77" y="322" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sM-pD-xH5"/>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNG-3B-mZ3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,7 +220,7 @@
                                 <exclude reference="nMX-sl-2P9"/>
                                 <exclude reference="qbD-no-5Qf"/>
                                 <exclude reference="1Ag-FY-Yi7"/>
-                                <exclude reference="rbF-Yn-5np"/>
+                                <exclude reference="Tep-OE-Vts"/>
                                 <exclude reference="bTE-E2-qSa"/>
                                 <exclude reference="Sef-hG-qO8"/>
                                 <exclude reference="zj5-fA-zRx"/>
@@ -228,7 +228,7 @@
                                 <exclude reference="1Re-dl-Hex"/>
                                 <exclude reference="kv4-ke-ZR1"/>
                                 <exclude reference="rbO-PH-2zD"/>
-                                <exclude reference="Tep-OE-Vts"/>
+                                <exclude reference="rbF-Yn-5np"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -243,7 +243,7 @@
                                 <include reference="nMX-sl-2P9"/>
                                 <include reference="qbD-no-5Qf"/>
                                 <include reference="1Ag-FY-Yi7"/>
-                                <include reference="rbF-Yn-5np"/>
+                                <include reference="Tep-OE-Vts"/>
                                 <include reference="bTE-E2-qSa"/>
                                 <include reference="Sef-hG-qO8"/>
                                 <include reference="zj5-fA-zRx"/>
@@ -251,7 +251,7 @@
                                 <include reference="1Re-dl-Hex"/>
                                 <include reference="kv4-ke-ZR1"/>
                                 <include reference="rbO-PH-2zD"/>
-                                <include reference="Tep-OE-Vts"/>
+                                <include reference="rbF-Yn-5np"/>
                             </mask>
                         </variation>
                     </view>

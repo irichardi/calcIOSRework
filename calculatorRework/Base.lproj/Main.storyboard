@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorRework" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,252 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXL-Zz-x8l">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="44" width="304" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-OA-4qy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="1"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="73" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="646-Xm-7hd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-4j-ezy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="2"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="73" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tal-Gu-2SO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdv-Om-PA4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="3"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="73" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VdB-Sb-gbp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MC-Jf-CF6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="4"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="123" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uve-0P-3cX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUZ-WB-27U">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="5"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="123" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKK-IW-SPU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6we-qB-ctW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="6"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="123" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEM-Zs-9Iw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMX-sl-2P9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="7"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="173" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbT-LO-2jm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbD-no-5Qf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="8"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="173" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ug4-nC-JiQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ag-FY-Yi7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="0"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="223" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEA-DJ-cFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-Yn-5np">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="."/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="322" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNG-3B-mZ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-E2-qSa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="="/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="322" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="equalsTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtY-aJ-FDe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sef-hG-qO8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="*"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="273" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HvZ-FL-505"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj5-fA-zRx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="A/C"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="322" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8t-XZ-s2N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zau-Di-tYx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="-"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="223" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ga-PQ-6a8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-dl-Hex">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="/"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="273" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aw-Aa-CTY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv4-ke-ZR1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="+"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="223" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a3w-UE-wyj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-PH-2zD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="%"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="273" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5g-YC-EV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tep-OE-Vts">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="9"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="173" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sM-pD-xH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QXL-Zz-x8l"/>
+                                <exclude reference="x2b-OA-4qy"/>
+                                <exclude reference="Ip9-4j-ezy"/>
+                                <exclude reference="jdv-Om-PA4"/>
+                                <exclude reference="7MC-Jf-CF6"/>
+                                <exclude reference="NUZ-WB-27U"/>
+                                <exclude reference="6we-qB-ctW"/>
+                                <exclude reference="nMX-sl-2P9"/>
+                                <exclude reference="qbD-no-5Qf"/>
+                                <exclude reference="1Ag-FY-Yi7"/>
+                                <exclude reference="rbF-Yn-5np"/>
+                                <exclude reference="bTE-E2-qSa"/>
+                                <exclude reference="Sef-hG-qO8"/>
+                                <exclude reference="zj5-fA-zRx"/>
+                                <exclude reference="zau-Di-tYx"/>
+                                <exclude reference="1Re-dl-Hex"/>
+                                <exclude reference="kv4-ke-ZR1"/>
+                                <exclude reference="rbO-PH-2zD"/>
+                                <exclude reference="Tep-OE-Vts"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="QXL-Zz-x8l"/>
+                                <include reference="x2b-OA-4qy"/>
+                                <include reference="Ip9-4j-ezy"/>
+                                <include reference="jdv-Om-PA4"/>
+                                <include reference="7MC-Jf-CF6"/>
+                                <include reference="NUZ-WB-27U"/>
+                                <include reference="6we-qB-ctW"/>
+                                <include reference="nMX-sl-2P9"/>
+                                <include reference="qbD-no-5Qf"/>
+                                <include reference="1Ag-FY-Yi7"/>
+                                <include reference="rbF-Yn-5np"/>
+                                <include reference="bTE-E2-qSa"/>
+                                <include reference="Sef-hG-qO8"/>
+                                <include reference="zj5-fA-zRx"/>
+                                <include reference="zau-Di-tYx"/>
+                                <include reference="1Re-dl-Hex"/>
+                                <include reference="kv4-ke-ZR1"/>
+                                <include reference="rbO-PH-2zD"/>
+                                <include reference="Tep-OE-Vts"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="calcDisplay" destination="QXL-Zz-x8l" id="7Xm-XE-GQB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="429"/>
         </scene>
     </scenes>
 </document>

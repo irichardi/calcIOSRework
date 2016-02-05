@@ -12,6 +12,8 @@
 //  Code logic and some functions were based on http://www.ioscreator.com/tutorials/calculator-tutorial-in-ios8-with-swift
 
 import UIKit
+//handles math functions such as cos,sin,tan....
+import Foundation
 
 class ViewController: UIViewController {
     //system generated, can be deleted
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
     var firstNumber:Float! = 0
     var secNumber:Float! = 0
     var operation:String! = " "
+    
     
     //display label
     @IBOutlet weak var calcDisplay: UILabel!
@@ -94,6 +97,27 @@ class ViewController: UIViewController {
         }
         
     }
+    //gets the cos of a value for 
+    //further extra functions
+    @IBAction func cosTap(sender: AnyObject) {
+        var cosX:Double = 0
+        cosX = Double(cos(Double(calcDisplay.text!)!))
+        calcDisplay.text = "\(cosX)"
+        
+    }
+    //gets sin
+    @IBAction func sinTap(sender: AnyObject) {
+        var sinX:Double = 0
+        sinX = Double(sin(Double(calcDisplay.text!)!))
+        calcDisplay.text = "\(sinX)"
+    }
+    //gets tan
+    @IBAction func tanTap(sender: AnyObject) {
+        var tanX:Double = 0
+        tanX = Double(tan(Double(calcDisplay.text!)!))
+        calcDisplay.text = "\(tanX)"
+    }
+    
     //clears all
     @IBAction func clear(sender: AnyObject) {
         secNumber = 0;

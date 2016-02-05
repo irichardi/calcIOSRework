@@ -200,10 +200,40 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="."/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="77" y="322" width="46" height="30"/>
+                                    <rect key="frame" x="77" y="323" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNG-3B-mZ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEw-44-4Si">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="COS"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="373" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cosTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfA-jM-l2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91g-kI-pLP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="SIN"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="373" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sinTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ZC-I6-zoT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCP-aS-RWl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="TAN"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="373" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tanTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bk2-0Z-z4G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -229,6 +259,9 @@
                                 <exclude reference="kv4-ke-ZR1"/>
                                 <exclude reference="rbO-PH-2zD"/>
                                 <exclude reference="rbF-Yn-5np"/>
+                                <exclude reference="JEw-44-4Si"/>
+                                <exclude reference="91g-kI-pLP"/>
+                                <exclude reference="XCP-aS-RWl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -252,6 +285,9 @@
                                 <include reference="kv4-ke-ZR1"/>
                                 <include reference="rbO-PH-2zD"/>
                                 <include reference="rbF-Yn-5np"/>
+                                <include reference="JEw-44-4Si"/>
+                                <include reference="91g-kI-pLP"/>
+                                <include reference="XCP-aS-RWl"/>
                             </mask>
                         </variation>
                     </view>
